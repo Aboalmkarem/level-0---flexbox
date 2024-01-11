@@ -5,11 +5,10 @@
 }
 
 body {
-    background-color: cornflowerblue;
+    background-image: linear-gradient(43deg,hsla(0,0%,41%,.02),hsla(0,0%,41%,.02) 62%,hsla(0,0%,89%,.02) 0,hsla(0,0%,89%,.02) 69%,hsla(0,0%,9%,.02) 0,hsla(0,0%,9%,.02) 80%,hsla(0,0%,5%,.02) 0,hsla(0,0%,5%,.02) 82%,hsla(0,0%,5%,.02) 0,hsla(0,0%,5%,.02)),linear-gradient(31deg,hsla(0,0%,61%,.02),hsla(0,0%,61%,.02) 29%,hsla(0,0%,64%,.02) 0,hsla(0,0%,64%,.02) 41%,hsla(0,0%,78%,.02) 0,hsla(0,0%,78%,.02) 74%,hsla(0,0%,90%,.02) 0,hsla(0,0%,90%,.02) 79%,hsla(0,0%,6%,.02) 0,hsla(0,0%,6%,.02)),linear-gradient(319deg,rgba(39,39,39,.02),rgba(39,39,39,.02) 17%,rgba(49,49,49,.02) 0,rgba(49,49,49,.02) 25%,rgba(59,59,59,.02) 0,rgba(59,59,59,.02) 32%,hsla(0,0%,76%,.02) 0,hsla(0,0%,76%,.02) 46%,hsla(0,0%,86%,.02) 0,hsla(0,0%,86%,.02)),linear-gradient(113deg,hsla(0,0%,74%,.02),hsla(0,0%,74%,.02) 15%,hsla(0,0%,87%,.02) 0,hsla(0,0%,87%,.02) 46%,hsla(0,0%,8%,.02) 0,hsla(0,0%,8%,.02) 88%,rgba(93,93,93,.02) 0,rgba(93,93,93,.02) 94%,hsla(0,0%,51%,.02) 0,hsla(0,0%,51%,.02)),linear-gradient(29deg,hsla(0,0%,53%,.02),hsla(0,0%,53%,.02) 27%,hsla(0,0%,71%,.02) 0,hsla(0,0%,71%,.02) 41%,rgba(81,81,81,.02) 0,rgba(81,81,81,.02) 46%,hsla(0,0%,99%,.02) 0,hsla(0,0%,99%,.02) 58%,rgba(74,74,74,.02) 0,rgba(74,74,74,.02)),linear-gradient(90deg,#e5e5e5,#e4e4e4);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     padding: 40px;
 }
@@ -28,34 +27,60 @@ body {
     ;
 }
 
-.container div {
-    background-color: blueviolet;
+img {
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+span {
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.box {
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.box .info {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.box .text {
+    padding-left: 1rem;
+}
+
+.box .text p {
+    padding-top: 1rem;
 }
 
 #box1 {
     grid-area: box1;
-
-    /* width: 40rem; */
+    background-color: #6642E1;
 }
 
 #box2 {
     grid-area: box2;
-    /* width: 20rem; */
+    background-color: #616D92;
 }
 
 #box3 {
     grid-area: box3;
-    /* width: 20rem; */
+    background-color: rgba(255, 255, 255, 0.751);
 }
 
 #box4 {
     grid-area: box4;
-    /* width: 20rem; */
+    background-color: rgba(255, 255, 255, 0.751)
 }
 
 #box5 {
     grid-area: box5;
-    /* width: 40rem; */
+    background-color: #484D6A;
 }
 
 @media only screen and (max-width:1024px) {
