@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -19,8 +20,8 @@ body {
     grid-template-rows: 1fr 1fr;    
     row-gap: 15px;
     column-gap: 15px;
-    width: 80rem;
-    height: 40rem;
+    width: 90rem;
+    height: 45rem;
     grid-template-areas: 
         "box1 box1 box2 box3"
         "box4 box5 box5 box3"
@@ -34,14 +35,21 @@ img {
 }
 
 span {
-    color: aqua;
+    color: #fff;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: calc(10px + 1.2vmin);
+}
+
+p {
+    color: #ffffff9b;
+    font-size: calc(7px + 1vmin);
+    line-height: calc(5px + 2vmin);
 }
 
 .box {
     padding: 1rem;
     border-radius: .5rem;
+    overflow: hidden;
 }
 
 .box .info {
@@ -71,11 +79,23 @@ span {
 #box3 {
     grid-area: box3;
     background-color: rgba(255, 255, 255, 0.751);
+    span {
+        color: rgba(0, 0, 0, 0.758);
+    }
+    p {
+        color: rgba(0, 0, 0, 0.52);
+    }
 }
 
 #box4 {
     grid-area: box4;
-    background-color: rgba(255, 255, 255, 0.751)
+    background-color: rgba(255, 255, 255, 0.751);
+    span {
+        color: rgba(0, 0, 0, 0.758);
+    }
+    p {
+        color: rgba(0, 0, 0, 0.52);
+    }
 }
 
 #box5 {
@@ -119,6 +139,7 @@ span {
 @media only screen and (max-width:547px) {
     .container {
         grid-template-columns: 1fr;
+        grid-template-rows: min-content;
         width: 30rem;
         height: 90rem;
         grid-template-areas: 
